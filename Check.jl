@@ -37,8 +37,8 @@ function Check(question_number, resposta)
 	right_answer = Ans[question_number]
 	hashed_ans = readchomp(pipeline(`echo -n $resposta`, `md5sum`))[1:end-3]
 	if hashed_ans != right_answer
-		return "Resposta ERRADA ╳"
+		print("Resposta ERRADA ╳")
 	else
-		return "Resposta CERTA! ✔"
+		print("Resposta CERTA: $resposta  ✔\n")
 	end
 end
