@@ -5,7 +5,7 @@ using Markdown
 using InteractiveUtils
 
 # ╔═╡ 0d3c83a0-4322-43fe-b36f-f7baaa0b7607
-include("/home/lorenzovaralo/Documentos/ProjetosPython/Project_Euler/Check.jl")
+include("$(@__DIR__)/Check.jl")
 
 # ╔═╡ 53edf68d-108e-44fc-bc7a-5db3501d969c
 #=
